@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cc10df96022b19841ac18003dab61704
-DefaultImporter:
+guid: c263196d056623347a616f73dc3ddb5b
+PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Scenes/DemoScene.unity
+  assetPath: Assets/DungeonModularPack/Prefabs/Handrail_A.prefab
   uploadId: 694981

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cc10df96022b19841ac18003dab61704
-DefaultImporter:
+guid: d2670d0ea7d6e7f4cb7e6be1a5541d46
+PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Scenes/DemoScene.unity
+  assetPath: Assets/DungeonModularPack/Prefabs/Pillar_B.prefab
   uploadId: 694981

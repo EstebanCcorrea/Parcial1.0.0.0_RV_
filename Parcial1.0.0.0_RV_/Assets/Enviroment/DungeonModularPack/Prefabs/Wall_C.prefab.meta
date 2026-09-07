@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cc10df96022b19841ac18003dab61704
-DefaultImporter:
+guid: 0e2a0f88f62841f42ae86ae323be43bf
+PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Scenes/DemoScene.unity
+  assetPath: Assets/DungeonModularPack/Prefabs/Wall_C.prefab
   uploadId: 694981

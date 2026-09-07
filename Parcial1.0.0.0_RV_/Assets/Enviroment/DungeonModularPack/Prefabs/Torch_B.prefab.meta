@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cc10df96022b19841ac18003dab61704
-DefaultImporter:
+guid: 3f24c80895a77fa4bba15f9bd599a41b
+PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 295430
   packageName: Dungeon Modular Pack
   packageVersion: 1.0
-  assetPath: Assets/DungeonModularPack/Scenes/DemoScene.unity
+  assetPath: Assets/DungeonModularPack/Prefabs/Torch_B.prefab
   uploadId: 694981

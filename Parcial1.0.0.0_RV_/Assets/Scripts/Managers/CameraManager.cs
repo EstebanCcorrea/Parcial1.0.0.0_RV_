@@ -80,4 +80,4 @@ public class CameraManager : MonoBehaviour
         player1Camera.rect = leftRect;
         player2Camera.rect = rightRect;
     }
-}
+} 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CameraManager : MonoBehaviour
 {
@@ -11,8 +12,16 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private Camera player1Camera;
     [SerializeField] private Camera player2Camera;
 
+    [Header("Player Controllers")]
+    [SerializeField] private PlayerController player1Controller;
+    [SerializeField] private PlayerController player2Controller;
+
     [Header("Pantalla dividida")]
     [SerializeField] private float splitDistance = 12f;
+
+    [Header("Transicion")]
+    [SerializeField] private float transitionSpeed = 2f;
+    private float splitAmount = 0f;
 
     private SharedCameraController sharedController;
 
@@ -24,34 +33,51 @@ public class CameraManager : MonoBehaviour
     {
         float distance = Vector3.Distance(player1.position, player2.position);
 
-        Debug.Log("Distancia: " + distance);
+        // Decide si queremos pantalla dividida o no.
+        float targetSplit = distance >= splitDistance ? 1f : 0f;
 
-        if (distance >= splitDistance)
+        // Anima la transición.
+        splitAmount = Mathf.MoveTowards(
+            splitAmount,
+            targetSplit,
+            transitionSpeed * Time.deltaTime
+        );
+
+        UpdateViewport();
+    }
+    private void UpdateViewport()
+    {
+        sharedCamera.gameObject.SetActive(splitAmount < 0.99f);
+
+        player1Camera.gameObject.SetActive(splitAmount > 0.01f);
+        player2Camera.gameObject.SetActive(splitAmount > 0.01f);
+
+        if (splitAmount < 0.5f)
         {
-            Debug.Log("SPLIT SCREEN ACTIVADO");
-            EnableSplitScreen();
+            player1Controller.SetCameraTransform(sharedCamera.transform);
+            player2Controller.SetCameraTransform(sharedCamera.transform);
         }
         else
         {
-            Debug.Log("CAMARA COMPARTIDA");
-            EnableSharedCamera();
+            player1Controller.SetCameraTransform(player1Camera.transform);
+            player2Controller.SetCameraTransform(player2Camera.transform);
         }
+
+        Rect leftRect = new Rect(
+            0,
+            0,
+            1f - splitAmount * 0.5f,
+            1
+        );
+
+        Rect rightRect = new Rect(
+            0.5f + (0.5f - splitAmount * 0.5f),
+            0,
+            splitAmount * 0.5f,
+            1
+        );
+
+        player1Camera.rect = leftRect;
+        player2Camera.rect = rightRect;
     }
-
-    private void EnableSharedCamera()
-    {
-        sharedCamera.gameObject.SetActive(true);
-
-        player1Camera.gameObject.SetActive(false);
-        player2Camera.gameObject.SetActive(false);
-    }
-
-    private void EnableSplitScreen()
-    {
-        sharedCamera.gameObject.SetActive(false);
-
-        player1Camera.gameObject.SetActive(true);
-        player2Camera.gameObject.SetActive(true);
-    }
-
 }

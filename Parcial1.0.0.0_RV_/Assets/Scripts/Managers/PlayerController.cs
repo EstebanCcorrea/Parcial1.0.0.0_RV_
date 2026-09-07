@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     [Header("Salto")]
     [SerializeField] private float jumpForce = 5f;
 
+    [Header("Camera")]
+    [SerializeField] private Transform cameraTransform;
+
     private Rigidbody rb;
     private CapsuleCollider capsule;
 
@@ -72,7 +75,30 @@ public class PlayerController : MonoBehaviour
         else if (isRunning)
             currentSpeed = runSpeed;
 
-        Vector3 movement = new Vector3(moveInput.x, 0f, moveInput.y);
+        Vector3 forward = cameraTransform.forward;
+        Vector3 right = cameraTransform.right;
+
+        // Quitamos la inclinación de la cámara.
+        forward.y = 0f;
+        right.y = 0f;
+
+        // Normalizamos para que siempre midan 1.
+        forward.Normalize();
+        right.Normalize();
+
+        // Movimiento relativo a la cámara.
+        Vector3 movement = forward * moveInput.y + right * moveInput.x;
+
+        if (movement.sqrMagnitude > 0.01f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(movement);
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                10f * Time.fixedDeltaTime
+            );
+        }
 
         rb.MovePosition(
             rb.position + movement * currentSpeed * Time.fixedDeltaTime
@@ -99,5 +125,9 @@ public class PlayerController : MonoBehaviour
             capsule.height = originalHeight;
             capsule.center = originalCenter;
         }
+    }
+    public void SetCameraTransform(Transform newCamera)
+    {
+        cameraTransform = newCamera;
     }
 }

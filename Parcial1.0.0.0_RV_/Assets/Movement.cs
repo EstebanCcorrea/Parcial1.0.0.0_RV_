@@ -536,6 +536,11 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""prueba"",
+            ""bindingGroup"": ""prueba"",
+            ""devices"": []
         }
     ]
 }");
@@ -847,6 +852,19 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         {
             if (m_keyboardcontrollerSchemeIndex == -1) m_keyboardcontrollerSchemeIndex = asset.FindControlSchemeIndex("keyboard+controller");
             return asset.controlSchemes[m_keyboardcontrollerSchemeIndex];
+        }
+    }
+    private int m_pruebaSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme pruebaScheme
+    {
+        get
+        {
+            if (m_pruebaSchemeIndex == -1) m_pruebaSchemeIndex = asset.FindControlSchemeIndex("prueba");
+            return asset.controlSchemes[m_pruebaSchemeIndex];
         }
     }
     /// <summary>

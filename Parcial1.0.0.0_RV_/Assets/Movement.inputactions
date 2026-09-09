@@ -450,6 +450,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "prueba",
+            "bindingGroup": "prueba",
+            "devices": []
         }
     ]
 }

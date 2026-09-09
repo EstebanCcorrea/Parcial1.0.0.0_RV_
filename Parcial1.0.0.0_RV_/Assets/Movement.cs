@@ -366,7 +366,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -377,7 +377,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -388,7 +388,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -399,7 +399,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -421,7 +421,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";keyboard+controller"",
                     ""action"": ""MoveMago"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -432,7 +432,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";keyboard+controller"",
                     ""action"": ""MoveMago"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -443,7 +443,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";keyboard+controller"",
                     ""action"": ""MoveMago"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -454,10 +454,21 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";keyboard+controller"",
                     ""action"": ""MoveMago"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1c1f141-4c99-46de-8167-2ac1fd1b1242"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";keyboard+controller"",
+                    ""action"": ""MoveMago"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -491,6 +502,22 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""keyboard+controller"",
+            ""bindingGroup"": ""keyboard+controller"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Gamepad>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -793,6 +820,19 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         {
             if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
             return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    private int m_keyboardcontrollerSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme keyboardcontrollerScheme
+    {
+        get
+        {
+            if (m_keyboardcontrollerSchemeIndex == -1) m_keyboardcontrollerSchemeIndex = asset.FindControlSchemeIndex("keyboard+controller");
+            return asset.controlSchemes[m_keyboardcontrollerSchemeIndex];
         }
     }
     /// <summary>

@@ -104,12 +104,12 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Jump"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""429310c1-bc57-4c43-9355-866e67776647"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false,
+                    ""initialStateCheck"": true,
                     ""priority"": 0
                 },
                 {

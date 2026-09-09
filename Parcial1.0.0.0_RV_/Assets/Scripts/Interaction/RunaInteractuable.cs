@@ -25,4 +25,9 @@ public class RunaInteractable : Interactable
 
         Debug.Log("Runa seleccionada: " + runeValue);
     }
+
+    public void ReiniciarRuna()
+    {
+        selected = false;
+    }
 }

@@ -171,6 +171,16 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": true,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""NextDialogo"",
+                    ""type"": ""Button"",
+                    ""id"": ""5e7eb0a6-16c5-4cb9-a51b-067adea06429"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -448,6 +458,17 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""action"": ""MoveMago"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""254966d5-e88c-4d31-a508-213b617a97e1"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextDialogo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -487,6 +508,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_MoveSoldado = m_Player.FindAction("MoveSoldado", throwIfNotFound: true);
         m_Player_MoveMago = m_Player.FindAction("MoveMago", throwIfNotFound: true);
+        m_Player_NextDialogo = m_Player.FindAction("NextDialogo", throwIfNotFound: true);
     }
 
     ~@Movement()
@@ -575,6 +597,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_MoveSoldado;
     private readonly InputAction m_Player_MoveMago;
+    private readonly InputAction m_Player_NextDialogo;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -618,6 +641,10 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/MoveMago".
         /// </summary>
         public InputAction @MoveMago => m_Wrapper.m_Player_MoveMago;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/NextDialogo".
+        /// </summary>
+        public InputAction @NextDialogo => m_Wrapper.m_Player_NextDialogo;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -668,6 +695,9 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             @MoveMago.started += instance.OnMoveMago;
             @MoveMago.performed += instance.OnMoveMago;
             @MoveMago.canceled += instance.OnMoveMago;
+            @NextDialogo.started += instance.OnNextDialogo;
+            @NextDialogo.performed += instance.OnNextDialogo;
+            @NextDialogo.canceled += instance.OnNextDialogo;
         }
 
         /// <summary>
@@ -703,6 +733,9 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             @MoveMago.started -= instance.OnMoveMago;
             @MoveMago.performed -= instance.OnMoveMago;
             @MoveMago.canceled -= instance.OnMoveMago;
+            @NextDialogo.started -= instance.OnNextDialogo;
+            @NextDialogo.performed -= instance.OnNextDialogo;
+            @NextDialogo.canceled -= instance.OnNextDialogo;
         }
 
         /// <summary>
@@ -825,5 +858,12 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMoveMago(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "NextDialogo" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnNextDialogo(InputAction.CallbackContext context);
     }
 }

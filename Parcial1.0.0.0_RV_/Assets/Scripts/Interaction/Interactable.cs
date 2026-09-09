@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Diálogo")]
+    [SerializeField] private DialogueUI dialogueUI;
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Interact()
     {
-        
+        if (dialogueUI != null)
+        {
+            dialogueUI.StartDialogue();
+        }
+
+        Debug.Log("Interacción realizada con: " + gameObject.name);
     }
 }

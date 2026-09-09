@@ -85,6 +85,16 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "NextDialogo",
+                    "type": "Button",
+                    "id": "5e7eb0a6-16c5-4cb9-a51b-067adea06429",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -362,6 +372,17 @@
                     "action": "MoveMago",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "254966d5-e88c-4d31-a508-213b617a97e1",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextDialogo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

@@ -11509,9 +11509,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 228807670576220657, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 228807670576220657, guid: 5282cfb35450892409080481e606f581, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1065151402}
+    - target: {fileID: 228807670576220657, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: distance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 228807670576220657, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: zoomSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 228807670576220657, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: sensitivity
+      value: 102.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3299731895413348003, guid: 5282cfb35450892409080481e606f581, type: 3}
       propertyPath: player1
       value: 
@@ -11568,6 +11584,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1359644349}
+    - target: {fileID: 9168085922016985714, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: distance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168085922016985714, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: zoomSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168085922016985714, guid: 5282cfb35450892409080481e606f581, type: 3}
+      propertyPath: sensitivity
+      value: 110.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

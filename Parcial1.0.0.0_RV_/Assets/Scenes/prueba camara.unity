@@ -644,6 +644,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4432481522682374122, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1011114074}
     - target: {fileID: 8322527438072149840, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: m_Name
       value: Soldado
@@ -728,6 +732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.187
       objectReference: {fileID: 0}
+    - target: {fileID: 5929754113573581721, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1525685742}
     - target: {fileID: 7036696748902370358, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_Name
       value: Mago

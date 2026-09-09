@@ -58,8 +58,8 @@ public class TwoPlayerInput : MonoBehaviour
         }
 
         // Desemparejar dispositivos anteriores
-        soldado.user.UnpairDevices();
-        mago.user.UnpairDevices();
+        //soldado.user.UnpairDevices();
+        //mago.user.UnpairDevices();
 
         // Teclado
         Keyboard teclado = Keyboard.current;

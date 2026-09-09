@@ -190,7 +190,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Controller"",
+                    ""groups"": "";Controller;keyboard+controller"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -366,7 +366,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Keyboard"",
+                    ""groups"": "";Keyboard;keyboard+controller"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -377,7 +377,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Keyboard"",
+                    ""groups"": "";Keyboard;keyboard+controller"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -388,7 +388,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Keyboard"",
+                    ""groups"": "";Keyboard;keyboard+controller"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -399,7 +399,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Keyboard"",
+                    ""groups"": "";Keyboard;keyboard+controller"",
                     ""action"": ""MoveSoldado"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true

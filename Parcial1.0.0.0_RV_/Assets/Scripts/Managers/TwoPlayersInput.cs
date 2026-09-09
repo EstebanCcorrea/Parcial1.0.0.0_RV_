@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
@@ -30,19 +29,12 @@ public class TwoPlayerInput : MonoBehaviour
             return;
         }
 
-        // =====================================
-        // IDENTIFICAR LOS DOS GAMEPADS
-        // =====================================
-
         Gamepad gamepadSoldado = null;
         Gamepad gamepadMago = null;
 
         foreach (Gamepad gamepad in Gamepad.all)
         {
-            Debug.Log(
-                "Gamepad detectado: " +
-                gamepad.displayName
-            );
+            Debug.Log("Gamepad detectado: " + gamepad.displayName);
 
             if (gamepad.displayName.Contains("DualShock"))
             {
@@ -65,47 +57,59 @@ public class TwoPlayerInput : MonoBehaviour
             return;
         }
 
-        // =====================================
-        // LIMPIAR ASIGNACIONES ACTUALES
-        // =====================================
-
+        // Desemparejar dispositivos anteriores
         soldado.user.UnpairDevices();
         mago.user.UnpairDevices();
 
-        // =====================================
-        // SOLDADO
-        // DualShock
-        // =====================================
+        // Teclado
+        Keyboard teclado = Keyboard.current;
 
+        if (teclado == null)
+        {
+            Debug.LogError("No se detectó el teclado.");
+            return;
+        }
+
+        // SOLDADO
         soldado.SwitchCurrentControlScheme(
-            "Controller",
+            "keyboard+controller",
+            teclado,
             gamepadSoldado
         );
 
-        // =====================================
         // MAGO
-        // Keyboard + XInput
-        // =====================================
+        mago.SwitchCurrentControlScheme(
+            "keyboard+controller",
+            teclado,
+            gamepadMago
+        );
 
-        if (Keyboard.current != null)
-        {
-            mago.SwitchCurrentControlScheme(
-                "keyboard+controller",
-                Keyboard.current,
-                gamepadMago
-            );
-        }
+        // Asociar las acciones con los dispositivos de cada jugador
+        soldado.user.AssociateActionsWithUser(soldado.actions);
+        mago.user.AssociateActionsWithUser(mago.actions);
 
         Debug.Log("================================");
         Debug.Log(
-            "SOLDADO  " +
+            "SOLDADO  Keyboard + " +
             gamepadSoldado.displayName
         );
+
         Debug.Log(
             "MAGO  Keyboard + " +
             gamepadMago.displayName
         );
-        Debug.Log("================================");
-    }
 
+        Debug.Log("================================");
+
+        // Mostrar qué dispositivos quedaron realmente asociados
+        Debug.Log(
+            "SOLDADO dispositivos: " +
+            string.Join(", ", soldado.devices)
+        );
+
+        Debug.Log(
+            "MAGO dispositivos: " +
+            string.Join(", ", mago.devices)
+        );
+    }
 }

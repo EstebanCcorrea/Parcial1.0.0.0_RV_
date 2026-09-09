@@ -6,7 +6,7 @@ public class CrystalSocket : MonoBehaviour
     [Tooltip("Transform vacío que marca la posición y rotación exacta donde encajará el cristal")]
     [SerializeField] private Transform snapPoint;
     [Tooltip("GameObject de la puerta que se desactivará/abrirá al completar el puzzle")]
-    [SerializeField] private GameObject doorToOpen;
+    [SerializeField] private GameObject doorToOpen;//si
 
     [Header("Visualización con Gizmos")]
     [SerializeField] private Color gizmoColor = Color.cyan;

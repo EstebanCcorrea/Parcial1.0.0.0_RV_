@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PickableCrystal : MonoBehaviour
+public class PickableCrystal : MonoBehaviour//si
 {
     [Header("Filtro de Jugador")]
     [Tooltip("Escribe el nombre exacto del GameObject del Mago en la jerarquía")]

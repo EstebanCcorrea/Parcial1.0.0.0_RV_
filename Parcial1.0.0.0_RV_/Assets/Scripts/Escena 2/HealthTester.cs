@@ -5,7 +5,7 @@ public class HealthTester : MonoBehaviour
 {
     [Header("Referencias a los Jugadores")]
     [SerializeField] private PlayerHealth player1Health; // Mago
-    [SerializeField] private PlayerHealth player2Health; // Soldado
+    [SerializeField] private PlayerHealth player2Health; // Soldadosi
 
     private void Update()
     {

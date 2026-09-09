@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PulleyMechanism : MonoBehaviour
+public class PulleyMechanism : MonoBehaviour//si
 {
     [Header("Filtro de Jugador")]
     [Tooltip("Escribe el nombre exacto del GameObject del Soldado en la jerarquía")]

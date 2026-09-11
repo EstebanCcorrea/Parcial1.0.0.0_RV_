@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 44
+  controlID: 101
   draggingID: 0
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -545,7 +545,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Managers
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Managers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\banqu\OneDrive\Documentos\GitHub\Parcial1.0.0.0_RV_\Parcial1.0.0.0_RV_
   m_LockTracker:
@@ -564,12 +564,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 59}
     m_SelectedIDs:
-    - m_rawData: 568105584918854886
+    - m_rawData: 568105584918859806
     m_LastClickedID:
-      m_rawData: 568105584918854886
+      m_rawData: 568105584918859806
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918854886
+    - m_rawData: 568105584918854890
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,7 +603,7 @@ MonoBehaviour:
       m_rawData: 0
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918854886
+    - m_rawData: 568105584918854890
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -631,9 +631,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
+    m_SelectedInstanceIDs:
+    - m_rawData: 568105589213709880
     m_LastClickedEntityId:
-      m_rawData: 0
+      m_rawData: 568105589213709880
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -714,7 +715,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectEntityId:
     m_rawData: 0
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 38
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1474,7 +1475,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.26929355, y: 0, z: 6.570099}
+    m_Target: {x: -0.96183014, y: -0.15669966, z: -3.3278801}
     speed: 2
     m_Value: {x: 0.26929355, y: 0, z: 6.570099}
   m_RenderMode: 0
@@ -1523,11 +1524,11 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: 0.0032051732, y: -0.9728423, z: 0.23066902, w: 0.013404293}
+    m_Target: {x: -0.08706436, y: -0.76774293, z: 0.106880344, w: -0.62557876}
     speed: 2
     m_Value: {x: -0.0032051732, y: 0.9728423, z: -0.23066902, w: -0.013404293}
   m_Size:
-    m_Target: 6.9706836
+    m_Target: 5.4010353
     speed: 2
     m_Value: 6.9706836
   m_Ortho:

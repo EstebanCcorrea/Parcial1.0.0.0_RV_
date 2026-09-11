@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour
 {
+    // ================= CONFIGURACIÓN =================
     [Header("Velocidad")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float runSpeed = 8f;
@@ -15,6 +16,11 @@ public class PlayerController : MonoBehaviour
 
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float lookSensitivityMouse = 2f;
+    [SerializeField] private float lookSensitivityGamepad = 100f;
+    [SerializeField] private float zoomSpeed = 2f;
+    [SerializeField] private float minZoom = 2f;
+    [SerializeField] private float maxZoom = 10f;
 
     [Header("Grounded")]
     [SerializeField] private Transform groundCheck;
@@ -24,21 +30,40 @@ public class PlayerController : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
+    // ================= VARIABLES =================
     private Rigidbody rb;
     private CapsuleCollider capsule;
     private bool isGrounded;
 
     private Vector2 moveInput;
+    private Vector2 lookInput;
     private bool isRunning;
     private bool isCrouching;
 
+    private float yaw;
+    private float pitch = 20f;
+    private float distance = 5f;
+
     private float originalHeight;
     private Vector3 originalCenter;
+
+    private PlayerInput input;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         capsule = GetComponent<CapsuleCollider>();
+        input = GetComponent<PlayerInput>();
+
+        // Suscribir acciones
+        input.actions["Move"].performed += Move;
+        input.actions["Move"].canceled += Move;
+        input.actions["Run"].performed += Run;
+        input.actions["Run"].canceled += Run;
+        input.actions["Crouch"].performed += Crouch;
+        input.actions["Jump"].performed += Jump;
+        input.actions["Look"].performed += Look;
+        input.actions["Zoom"].performed += Zoom;
 
         if (capsule != null)
         {
@@ -48,55 +73,57 @@ public class PlayerController : MonoBehaviour
     }
 
     // ================= INPUT =================
-
-    public void OnMove(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log($"{gameObject.name}  {moveInput}");
     }
 
-    public void OnRun(InputAction.CallbackContext context)
+    public void Run(InputAction.CallbackContext context)
     {
         isRunning = context.ReadValueAsButton();
     }
 
-    public void OnCrouch(InputAction.CallbackContext context)
+    public void Crouch(InputAction.CallbackContext context)
     {
         if (context.performed)
-        {
             isCrouching = !isCrouching;
-        }
     }
 
-    public void OnJump(InputAction.CallbackContext context)
+    public void Jump(InputAction.CallbackContext context)
     {
         if (context.performed && isGrounded)
-        {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+    }
+
+    public void Look(InputAction.CallbackContext context)
+    {
+        lookInput = context.ReadValue<Vector2>();
+    }
+
+    public void Zoom(InputAction.CallbackContext context)
+    {
+        float zoomInput = context.ReadValue<float>();
+
+       
+        distance -= zoomInput * zoomSpeed * Time.deltaTime;
+
+        // Evita que la cámara se meta dentro del jugador o se aleje demasiado
+        distance = Mathf.Clamp(distance, minZoom, maxZoom);
     }
 
     // ================= MOVIMIENTO =================
-
     private void FixedUpdate()
     {
         float currentSpeed = walkSpeed;
-
-        if (isCrouching)
-            currentSpeed = crouchSpeed;
-        else if (isRunning)
-            currentSpeed = runSpeed;
+        if (isCrouching) currentSpeed = crouchSpeed;
+        else if (isRunning) currentSpeed = runSpeed;
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
-
-        forward.y = 0f;
-        right.y = 0f;
-
-        forward.Normalize();
-        right.Normalize();
+        forward.y = 0f; right.y = 0f;
+        forward.Normalize(); right.Normalize();
 
         Vector3 movement = forward * moveInput.y + right * moveInput.x;
 
@@ -116,6 +143,20 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("VerticalVelocity", rb.linearVelocity.y);
     }
 
+    private void LateUpdate()
+    {
+        // Rotación de cámara con mouse o gamepad
+        yaw += lookInput.x * lookSensitivityMouse;
+        pitch -= lookInput.y * lookSensitivityMouse;
+        pitch = Mathf.Clamp(pitch, -40f, 80f);
+
+        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
+        Vector3 offset = rotation * new Vector3(0, 0, -distance);
+
+        cameraTransform.position = transform.position + offset;
+        cameraTransform.LookAt(transform.position);
+    }
+
     private void UpdateCrouchCollider()
     {
         if (capsule == null) return;
@@ -123,11 +164,7 @@ public class PlayerController : MonoBehaviour
         if (isCrouching)
         {
             capsule.height = originalHeight / 2f;
-            capsule.center = new Vector3(
-                originalCenter.x,
-                originalCenter.y / 2f,
-                originalCenter.z
-            );
+            capsule.center = new Vector3(originalCenter.x, originalCenter.y / 2f, originalCenter.z);
         }
         else
         {
@@ -135,6 +172,7 @@ public class PlayerController : MonoBehaviour
             capsule.center = originalCenter;
         }
     }
+
     public void SetCameraTransform(Transform newCamera)
     {
         cameraTransform = newCamera;

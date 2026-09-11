@@ -18,7 +18,6 @@ MonoBehaviour:
         serializedData:
         - key: 0
           value:
-<<<<<<< HEAD
             rid: 2886416185622790487
         - key: 1
           value:
@@ -27,14 +26,14 @@ MonoBehaviour:
           value:
             rid: 2886416185622790489
 =======
-            rid: 229898170620707085
+            rid: 2886416185622790144
         - key: 1
           value:
-            rid: 229898170620707086
+            rid: 2886416185622790145
         - key: 2
           value:
-            rid: 229898170620707087
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+            rid: 2886416185622790146
+>>>>>>> origin/ESteban2.0
       lastMaterialMappings:
         serializedData: []
       previewSettings:
@@ -42,7 +41,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-<<<<<<< HEAD
     - rid: 2886416185622790487
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
@@ -53,16 +51,16 @@ MonoBehaviour:
         modelID: 
     - rid: 2886416185622790489
 =======
-    - rid: 229898170620707085
+    - rid: 2886416185622790144
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 
-    - rid: 229898170620707086
+    - rid: 2886416185622790145
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 
-    - rid: 229898170620707087
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    - rid: 2886416185622790146
+>>>>>>> origin/ESteban2.0
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 

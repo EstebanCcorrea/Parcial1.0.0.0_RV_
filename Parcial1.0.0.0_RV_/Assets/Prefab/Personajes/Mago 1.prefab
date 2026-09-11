@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 5929754113573581721}
   - component: {fileID: 6318630676933863456}
   m_Layer: 0
-  m_Name: Mago
+  m_Name: Mago 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

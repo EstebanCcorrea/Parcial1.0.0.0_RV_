@@ -400,6 +400,7 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 8611729121752634776, guid: 5282cfb35450892409080481e606f581, type: 3}
   m_PrefabInstance: {fileID: 1321460930}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &79207697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1295,6 +1296,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 179631926}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &183933794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1346,7 @@ MonoBehaviour:
   healthFillImage: {fileID: 0}
   healthSlider: {fileID: 878897123}
   healthText: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &189919133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2485,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 195232175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!4 &277623555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2776073146943707948, guid: 5282cfb35450892409080481e606f581, type: 3}
@@ -2502,6 +2508,7 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 2273686982684148978, guid: 5282cfb35450892409080481e606f581, type: 3}
   m_PrefabInstance: {fileID: 1321460930}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &279969729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2774,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4978637151609762874, guid: 76cdbc7b4e493b540a4c8f4d598e0a5b, type: 3}
   m_PrefabInstance: {fileID: 291095153}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1001 &306474637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2779,6 +2788,49 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 277623555}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0899616
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000014176851
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15327798
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078625165173662026, guid: 96cad03208229e746977ecf56c42404a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
     - target: {fileID: 3908764786029984596, guid: 96cad03208229e746977ecf56c42404a, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3160,6 +3212,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+<<<<<<< HEAD
 --- !u!1001 &340125937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3836,6 +3889,8 @@ Transform:
   - {fileID: 222825343}
   m_Father: {fileID: 195232175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &401294986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4207,7 +4262,7 @@ Transform:
   m_GameObject: {fileID: 500407014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -289.7, y: -378.5, z: -12.199999}
+  m_LocalPosition: {x: -283.66034, y: -378.48, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4302,6 +4357,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
 --- !u!1001 &504664927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5053,6 +5109,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 531590730}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &534580181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5202,30 +5260,58 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 70622501}
-    - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 6
+<<<<<<< HEAD
+=======
+    - target: {fileID: 7455815087636444478, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_Name
+      value: Mago
       objectReference: {fileID: 0}
-    - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
-      value: 74f14b93-1ea7-4412-93a5-784db89cdd9b
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.26
       objectReference: {fileID: 0}
-    - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: 'Player/Interact[/Keyboard/e]'
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.57
       objectReference: {fileID: 0}
-    - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
-      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9983699
       objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0037473198
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.05693369
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0014175405
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.419
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 6.528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284191168556665084, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.187
+      objectReference: {fileID: 0}
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
     - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70622502}
+<<<<<<< HEAD
     - target: {fileID: 8779037972932903483, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5294,6 +5380,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mago
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5307,6 +5395,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7036696748902370358, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
   m_PrefabInstance: {fileID: 536741137}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &541001411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5452,11 +5541,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2114089421622561578, guid: 14dfd592f3ca9a3408b3d35c004ea0ec, type: 3}
   m_PrefabInstance: {fileID: 551166034}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!20 &554506142 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2278530584748647366, guid: 5282cfb35450892409080481e606f581, type: 3}
   m_PrefabInstance: {fileID: 1321460930}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &555567809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6050,6 +6142,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613726935}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &617748864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,6 +6281,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617748864}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1001 &617801530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7765,6 +7860,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2114089421622561578, guid: 14dfd592f3ca9a3408b3d35c004ea0ec, type: 3}
   m_PrefabInstance: {fileID: 779262767}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1001 &780231566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8327,6 +8424,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824336952}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1001 &827810036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8687,6 +8785,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 859880849}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &861812677
 GameObject:
   m_ObjectHideFlags: 0
@@ -8992,6 +9092,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938960962}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1001 &974772277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9673,6 +9774,12 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 1095897937}
+=======
+--- !u!114 &1097916414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2373013764120796843, guid: 149c83fab3f877e478b97ee64b6fc088, type: 3}
+  m_PrefabInstance: {fileID: 536741137}
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1097916415 stripped
 Transform:
@@ -10394,6 +10501,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
 --- !u!114 &1241781076 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4432481522682374122, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
@@ -10850,6 +10958,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 1299255479}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1001 &1321460930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10923,6 +11033,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5282cfb35450892409080481e606f581, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1330256406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11236,6 +11347,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 1348321843}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &1349930776
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,7 +12281,6 @@ RectTransform:
   - {fileID: 183933795}
   - {fileID: 1864556015}
   - {fileID: 824336953}
-  - {fileID: 1339837722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12596,6 +12708,7 @@ MonoBehaviour:
   healthFillImage: {fileID: 0}
   healthSlider: {fileID: 504625110}
   healthText: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1523267439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12990,6 +13103,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 1549565361}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &1556314642
 GameObject:
   m_ObjectHideFlags: 0
@@ -13127,6 +13242,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
 --- !u!1001 &1579235119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13530,6 +13646,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4220934241292132250, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
   m_PrefabInstance: {fileID: 1616106237}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &1622685911
 GameObject:
   m_ObjectHideFlags: 0
@@ -14643,7 +14761,7 @@ Transform:
   m_GameObject: {fileID: 1829466523}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -293.6, y: -378.48, z: -12.4}
+  m_LocalPosition: {x: -305.34033, y: -378.48, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15499,6 +15617,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986023759}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1001 &1989861853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16159,6 +16278,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 18909760996641151, guid: c863f656782d099438e2f1ba789301c8, type: 3}
   m_PrefabInstance: {fileID: 2115108379}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!1 &2128843215
 GameObject:
   m_ObjectHideFlags: 0
@@ -16265,12 +16386,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128843215}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.92153, y: 0, z: -7.6385994}
-  m_LocalScale: {x: -2.45892, y: 0.45199, z: 3.1432104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.86, y: 0, z: -0.12}
+  m_LocalScale: {x: -9.749114, y: 1, z: 8.746008}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 594974987}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2129742122
 PrefabInstance:
@@ -16463,6 +16584,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 333660450}
+  - {fileID: 2128843219}
   - {fileID: 306474637}
   - {fileID: 536741137}
   - {fileID: 1321460930}
@@ -16471,6 +16593,7 @@ SceneRoots:
   - {fileID: 1472110389}
   - {fileID: 1206112803}
   - {fileID: 1622685914}
+<<<<<<< HEAD
   - {fileID: 555567810}
   - {fileID: 1615506099}
   - {fileID: 243446656}
@@ -16479,3 +16602,5 @@ SceneRoots:
   - {fileID: 189919138}
   - {fileID: 374221128}
   - {fileID: 195232175}
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)

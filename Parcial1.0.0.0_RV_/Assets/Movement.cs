@@ -328,6 +328,7 @@ public partial class @Movement : IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+<<<<<<< HEAD
                 },
                 {
                     ""name"": """",
@@ -637,6 +638,8 @@ public partial class @Movement : IInputActionCollection2, IDisposable
                     ""action"": ""NextDialogo"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
                 }
             ]
         }

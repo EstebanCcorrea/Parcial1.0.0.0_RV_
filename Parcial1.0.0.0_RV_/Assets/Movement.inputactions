@@ -242,6 +242,7 @@
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
+<<<<<<< HEAD
                 },
                 {
                     "name": "",
@@ -551,6 +552,8 @@
                     "action": "NextDialogo",
                     "isComposite": false,
                     "isPartOfComposite": false
+=======
+>>>>>>> parent of 7acded2 (mecanicas escena 2)
                 }
             ]
         }

@@ -21,7 +21,6 @@ public class SceneTransitionTrigger : MonoBehaviour
 
         CheckTransition();
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.name == mageName) isMageInZone = false;

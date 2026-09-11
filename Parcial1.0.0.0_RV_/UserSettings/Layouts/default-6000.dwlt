@@ -39,80 +39,16 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 43
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-=======
-    y: 62
-    width: 1470
-    height: 807
-  m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TMP_PackageResourceImporterWindow
-  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.DockArea
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 640
-    height: 236
-  m_MinSize: {x: 640, y: 236}
-  m_MaxSize: {x: 640, y: 236}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.SplitView
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 640
-    height: 236
-  m_MinSize: {x: 640, y: 236}
-  m_MaxSize: {x: 640, y: 236}
-  vertical: 0
-  controlID: 31027
-  draggingID: 0
---- !u!114 &5
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,9 +89,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1466
+    x: 1459
     y: 0
-    width: 454
+    width: 461
     height: 933
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
@@ -230,37 +166,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
   - {fileID: 7}
   - {fileID: 2}
   - {fileID: 8}
-=======
-  - {fileID: 6}
-  - {fileID: 8}
-  - {fileID: 7}
->>>>>>> parent of 7acded2 (mecanicas escena 2)
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1920
     height: 989
-=======
-    width: 1470
-    height: 807
->>>>>>> parent of 7acded2 (mecanicas escena 2)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 36
   m_UseBottomView: 1
   m_BottomViewHeight: 20
-<<<<<<< HEAD
 --- !u!114 &7
-=======
---- !u!114 &6
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,21 +198,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1920
     height: 36
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
 --- !u!114 &8
-=======
-    width: 1470
-    height: 36
-  m_MinSize: {x: 50, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
---- !u!114 &7
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,21 +219,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 969
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &9
-=======
-    y: 787
-    width: 1470
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
---- !u!114 &8
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,18 +237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 10}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1466
-    height: 933
-  m_MinSize: {x: 200, y: 112}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
   controlID: 10083
   draggingID: 0
 --- !u!114 &10
@@ -375,22 +266,6 @@ MonoBehaviour:
   controlID: 10074
   draggingID: 0
 --- !u!114 &11
-=======
-  - {fileID: 9}
-  - {fileID: 14}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 36
-    width: 1470
-    height: 751
-  m_MinSize: {x: 300, y: 112}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 38636
-  draggingID: 0
---- !u!114 &9
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,7 +282,6 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 363
     y: 0
     width: 1103
@@ -421,41 +295,6 @@ MonoBehaviour:
   - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 2
-=======
-    x: 0
-    y: 0
-    width: 1015.5
-    height: 751
-  m_MinSize: {x: 200, y: 112}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 38637
-  draggingID: 0
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1015.5
-    height: 445
-  m_MinSize: {x: 200, y: 56}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 38638
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -472,6 +311,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 247
@@ -484,6 +324,21 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> parent of 7acded2 (mecanicas escena 2)
+=======
+    x: 361
+    y: 0
+    width: 1098
+    height: 553
+  m_MinSize: {x: 52, y: 76}
+  m_MaxSize: {x: 4002, y: 4026}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 12}
+  m_Selected: 2
+  m_LastSelected: 1
+>>>>>>> origin/Esteban
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -492,7 +347,29 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
+    x: 0
+    y: 0
+    width: 247
+    height: 445
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEditor.Graphs.dll::UnityEditor.Graphs.AnimatorControllerTool
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -506,9 +383,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Animator\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 363
-    y: 79
-    width: 1101
+    x: 362
+    y: 24
+    width: 1096
     height: 527
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -530,15 +407,16 @@ MonoBehaviour:
     - {fileID: -8018633521670371155, guid: 936050558b7c5e143968511e9f0a5422, type: 2}
     - {fileID: 3874002580980076230, guid: 936050558b7c5e143968511e9f0a5422, type: 2}
     - {fileID: 8897776953409762708, guid: 936050558b7c5e143968511e9f0a5422, type: 2}
+    - {fileID: -2137783900205441324, guid: a0c9c855d501ca5439b919604dcba73c, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.67482036
+    - e00: 0.81785715
       e01: 0
       e02: 0
-      e03: 38.470985
+      e03: 27.267883
       e10: 0
-      e11: 0.67482036
+      e11: 0.81785715
       e12: 0
-      e13: 170.37546
+      e13: 88.60715
       e20: 0
       e21: 0
       e22: 1
@@ -550,7 +428,7 @@ MonoBehaviour:
     - e00: 1
       e01: 0
       e02: 0
-      e03: 163.5
+      e03: 161
       e10: 0
       e11: 1
       e12: 0
@@ -563,14 +441,30 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1.2927438
+    - e00: 1
       e01: 0
       e02: 0
-      e03: 27.729664
+      e03: 371
       e10: 0
-      e11: 1.2927438
+      e11: 1
       e12: 0
-      e13: 175.47801
+      e13: 209
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -580,9 +474,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 936050558b7c5e143968511e9f0a5422, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: a0c9c855d501ca5439b919604dcba73c, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -8018633521670371155, guid: 936050558b7c5e143968511e9f0a5422, type: 2}
+  - m_Target: {fileID: -2137783900205441324, guid: a0c9c855d501ca5439b919604dcba73c, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -592,30 +486,9 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
-=======
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 247
-    y: 0
-    width: 768.5
-    height: 445
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 19}
-  - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
->>>>>>> parent of 7acded2 (mecanicas escena 2)
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -624,102 +497,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-=======
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 445
-    width: 1015.5
-    height: 306
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1015.5
-    y: 0
-    width: 454.5
-    height: 751
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 22}
-  m_Panes:
-  - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro:TMPro:TMP_PackageResourceImporterWindow
-  m_MinSize: {x: 640, y: 210}
-  m_MaxSize: {x: 640, y: 210}
-  m_TitleContent:
-    m_Text: TMP Importer
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "TMP Importer\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 271
-    y: 366
-    width: 640
-    height: 210
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_DynamicPanelContainerData: []
-    m_OverlaysVisible: 1
-    m_PresetDirty: 0
-    m_DynamicPanelBehavior: 0
-    m_DynamicPanelBehaviorModified: 0
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
->>>>>>> parent of 7acded2 (mecanicas escena 2)
   m_EditorHideFlags: 0
   m_Script: {fileID: 13987, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -734,13 +511,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 0
-    width: 1920
-=======
-    y: 62
-    width: 1470
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
     height: 36
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -985,11 +758,11 @@ MonoBehaviour:
     m_PresetDirty: 0
     m_DynamicPanelBehavior: 0
     m_DynamicPanelBehaviorModified: 0
-<<<<<<< HEAD
---- !u!114 &14
+    y: 0
+    width: 1920
 =======
---- !u!114 &17
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+--- !u!114 &14
+>>>>>>> origin/Esteban
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1010,17 +783,11 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 0
-    y: 577
-    width: 1465
-    height: 354
+--- !u!114 &14
 =======
-    x: 247
-    y: 98
-    width: 766.5
-    height: 419
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    width: 1458
+    height: 354
+>>>>>>> origin/Esteban
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1036,41 +803,10 @@ MonoBehaviour:
     m_PresetDirty: 0
     m_DynamicPanelBehavior: 0
     m_DynamicPanelBehaviorModified: 0
-<<<<<<< HEAD
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_ReferencingEntityIds: []
-    m_SceneHandles: []
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Animations
-    m_Globs: []
-    m_ProductIds: 
-    m_AnyWithAssetOrigin: 0
-    m_OriginalText: 
-    m_ImportLogFlags: 0
-    m_FilterByTypeIntersection: 0
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Animations
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Kathe\Desktop\RV proyectos\Parcial1.0.0.0_RV_\Parcial1.0.0.0_RV_
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastLocalAssetsSearchArea: 1
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs:
-    - m_rawData: 568105584918865828
-    m_LastClickedID:
-      m_rawData: 568105584918865828
-    m_ExpandedIDs: []
+    x: 0
+    y: 577
+    width: 1465
+    height: 354
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1130,16 +866,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_rawData: 568105584918870364
-    m_LastClickedEntityId:
-      m_rawData: 568105584918870364
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs:
-    - m_rawData: 568105584918855184
-    - m_rawData: 568105584918855922
-    - m_rawData: 568105584918855894
-    - m_rawData: 568105584918855930
+    - m_rawData: 568105584918865828
+    m_LastClickedID:
+      m_rawData: 568105584918865828
+    m_ExpandedIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1191,9 +921,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
+    x: 1460
     y: 24
-    width: 453
+    width: 460
     height: 907
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1225,74 +955,18 @@ MonoBehaviour:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &16
+    m_SelectedInstanceIDs:
+    - m_rawData: 568105584918870364
+    m_LastClickedEntityId:
+      m_rawData: 568105584918870364
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs:
+    - m_rawData: 568105584918855184
+    - m_rawData: 568105584918855922
+    - m_rawData: 568105584918855894
+    - m_rawData: 568105584918855930
 =======
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1920, y: 1080}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -480
-    m_HBaseRangeMax: 480
-    m_VBaseRangeMin: -270
-    m_VBaseRangeMax: 270
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 766.5
-      height: 398
-    m_Scale: {x: 0.73703706, y: 0.73703706}
-    m_Translation: {x: 383.25, y: 199}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -519.9874
-      y: -270
-      width: 1039.9749
-      height: 540
-    m_MinimalGUI: 1
-  m_defaultScale: 0.73703706
-  m_LastWindowPixelSize: {x: 1533, y: 838}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
-  m_showToolbar: 1
---- !u!114 &18
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+>>>>>>> origin/Esteban
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1314,15 +988,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 24
-    width: 362
-    height: 527
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
 =======
-    y: 98
-    width: 246
-    height: 419
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    width: 360
+    height: 527
+>>>>>>> origin/Esteban
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1341,42 +1013,16 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: []
-      m_LastClickedID:
-        m_rawData: 0
-      m_ExpandedIDs:
-      - m_rawData: 568105589213738570
-      - m_rawData: 568105589213738860
-      - m_rawData: 568105589213738864
-      - m_rawData: 568105589213738866
+    y: 24
+    width: 362
+    height: 527
 =======
-      m_SelectedIDs:
-      - m_rawData: 568105584918869918
-      - m_rawData: 568105584918866972
-      m_LastClickedID:
-        m_rawData: 0
-      m_ExpandedIDs:
-      - m_rawData: 568105589213623922
-      - m_rawData: 568105589213655922
-      - m_rawData: 568105589213655954
-      - m_rawData: 568105589213664798
-      - m_rawData: 568105589213678374
-      - m_rawData: 568105589213683240
-      - m_rawData: 568105589213683272
-      - m_rawData: 568105589213683294
-      - m_rawData: 568105589213689532
-      - m_rawData: 568105589213704402
-      - m_rawData: 568105589213722432
-      - m_rawData: 568105589213723282
-      - m_rawData: 568105589213735892
-      - m_rawData: 568105589213749280
-      - m_rawData: 568105589213754946
-      - m_rawData: 568105589213755150
-      - m_rawData: 568105589213755304
-      - m_rawData: 568105589213755452
-      - m_rawData: 568105589213755982
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+      - m_rawData: 568105589213732328
+      - m_rawData: 568105589213732330
+      - m_rawData: 568105589213755638
+      - m_rawData: 568105589213755932
+      - m_rawData: 568105589213755970
+>>>>>>> origin/Esteban
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: P1_SpawnPoint
@@ -1403,7 +1049,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &19
+      m_ExpandedIDs:
+      - m_rawData: 568105589213738570
+      - m_rawData: 568105589213738860
+      - m_rawData: 568105589213738864
+      - m_rawData: 568105589213738866
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1424,17 +1074,13 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 364
-    y: 24
-    width: 1101
-    height: 527
+--- !u!114 &19
 =======
-    x: 248
-    y: 24
-    width: 766.5
-    height: 419
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    x: 361
+    y: 79
+    width: 1096
+    height: 527
+>>>>>>> origin/Esteban
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2091,15 +1737,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 0, y: 0, z: 0}
-    speed: 2
-    m_Value: {x: -0.96183014, y: -0.15669966, z: -3.3278801}
+    x: 364
+    y: 24
+    width: 1101
+    height: 527
 =======
-    m_Target: {x: 12.570007, y: 0.519989, z: -0.12}
+    m_Target: {x: 2.0902815, y: 2.4383438, z: 5.3541102}
     speed: 2
-    m_Value: {x: 12.570007, y: 0.519989, z: -0.12}
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    m_Value: {x: 2.0902815, y: 2.4383438, z: 5.3541102}
+>>>>>>> origin/Esteban
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2146,21 +1792,18 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-<<<<<<< HEAD
-    m_Value: {x: -0.08707387, y: -0.7678268, z: 0.10689202, w: -0.62564707}
-  m_Size:
-    m_Target: 10
-    speed: 2
-    m_Value: 5.4010353
+    m_Value: {x: -0.96183014, y: -0.15669966, z: -3.3278801}
 =======
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
-  m_Size:
-    m_Target: 10
+    m_Target: {x: -0.0004074873, y: -0.94584304, z: -0.001119193, w: 0.3242741}
     speed: 2
-    m_Value: 10
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    m_Value: {x: 0.0004075332, y: 0.9459499, z: 0.0011193228, w: -0.32431072}
+  m_Size:
+    m_Target: 0.9063084
+    speed: 2
+    m_Value: 0.9063084
+>>>>>>> origin/Esteban
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2183,7 +1826,13 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
-    m_SceneView: {fileID: 19}
+    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    speed: 2
+    m_Value: {x: -0.08707387, y: -0.7678268, z: 0.10689202, w: -0.62564707}
+  m_Size:
+    m_Target: 10
+    speed: 2
+    m_Value: 5.4010353
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -2196,7 +1845,7 @@ MonoBehaviour:
     name: Contributors / Receivers
     section: Lighting
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+    m_SceneView: {fileID: 19}
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2217,17 +1866,13 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 363
-    y: 79
-    width: 1101
-    height: 527
+--- !u!114 &20
 =======
-    x: 0
-    y: 543
-    width: 1014.5
-    height: 280
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+    x: 361
+    y: 79
+    width: 1096
+    height: 527
+>>>>>>> origin/Esteban
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2243,14 +1888,10 @@ MonoBehaviour:
     m_PresetDirty: 0
     m_DynamicPanelBehavior: 0
     m_DynamicPanelBehaviorModified: 0
-<<<<<<< HEAD
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1101, y: 506}
+    x: 363
+    y: 79
+    width: 1101
+    height: 527
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2265,8 +1906,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -550.5
-    m_HBaseRangeMax: 550.5
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1101, y: 506}
     m_VBaseRangeMin: -253
     m_VBaseRangeMax: 253
     m_HAllowExceedBaseRangeMin: 1
@@ -2277,7 +1918,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -2286,23 +1927,18 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1101
-      height: 506
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 550.5, y: 253}
+    m_HBaseRangeMin: -550.5
+    m_HBaseRangeMax: 550.5
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -550.5
-      y: -253
       width: 1101
       height: 506
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1101, y: 527}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 550.5, y: 253}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2310,147 +1946,15 @@ MonoBehaviour:
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
 --- !u!114 &19
+      x: -550.5
+      y: -253
+      width: 1101
+      height: 506
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1101, y: 527}
 =======
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_ReferencingEntityIds: []
-    m_SceneHandles: []
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts
-    m_Globs: []
-    m_ProductIds: 
-    m_AnyWithAssetOrigin: 0
-    m_OriginalText: 
-    m_ImportLogFlags: 0
-    m_FilterByTypeIntersection: 0
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/isa/Desktop/Parcial1.0.0.0_RV_/Parcial1.0.0.0_RV_
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastLocalAssetsSearchArea: 1
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs:
-    - m_rawData: 568105584918858826
-    m_LastClickedID:
-      m_rawData: 568105584918858826
-    m_ExpandedIDs:
-    - m_rawData: 568105589213755798
-    - m_rawData: 0
-    - m_rawData: 568105584918854790
-    - m_rawData: 568105584918858826
-    - m_rawData: 568105587066273791
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData:
-        m_rawData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_EntityId:
-        m_rawData: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: []
-    m_LastClickedID:
-      m_rawData: 0
-    m_ExpandedIDs:
-    - m_rawData: 568105589213755798
-    - m_rawData: 0
-    - m_rawData: 568105584918854790
-    - m_rawData: 568105587066273791
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData:
-        m_rawData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_EntityId:
-        m_rawData: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_rawData: 568105584918866972
-    m_LastClickedEntityId:
-      m_rawData: 568105584918866972
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: []
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData:
-        m_rawData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_EntityId:
-        m_rawData: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
---- !u!114 &21
->>>>>>> parent of 7acded2 (mecanicas escena 2)
+>>>>>>> origin/Esteban
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2472,84 +1976,38 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingEntityIds: []
+    m_SceneHandles: []
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Scripts
+=======
+    y: 632
+    width: 1458
+    height: 354
+>>>>>>> origin/Esteban
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_PresetDirty: 0
+    m_DynamicPanelBehavior: 0
+    m_DynamicPanelBehaviorModified: 0
     y: 632
     width: 1465
     height: 354
-=======
-    y: 542
-    width: 1121.5
-    height: 280
->>>>>>> parent of 7acded2 (mecanicas escena 2)
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_DynamicPanelContainerData: []
-    m_OverlaysVisible: 1
-    m_PresetDirty: 0
-    m_DynamicPanelBehavior: 0
-    m_DynamicPanelBehaviorModified: 0
-<<<<<<< HEAD
-=======
---- !u!114 &22
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Inspector\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 1015.5
-    y: 98
-    width: 453.5
-    height: 725
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_DynamicPanelContainerData: []
-    m_OverlaysVisible: 1
-    m_PresetDirty: 0
-    m_DynamicPanelBehavior: 0
-    m_DynamicPanelBehaviorModified: 0
-  m_ObjectsLockedBeforeSerialization: []
-  m_EntityIdsLockedBeforeSerialization: []
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectEntityId:
-    m_rawData: 0
-  m_LastVerticalScrollValue: 1072
-  m_GlobalObjectId: 
-  m_InspectorMode: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewWindow: {fileID: 0}
->>>>>>> parent of 7acded2 (mecanicas escena 2)

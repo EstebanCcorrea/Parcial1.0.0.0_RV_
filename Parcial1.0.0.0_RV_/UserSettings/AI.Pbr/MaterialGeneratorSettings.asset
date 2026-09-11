@@ -18,14 +18,12 @@ MonoBehaviour:
         serializedData:
         - key: 0
           value:
-            rid: 2886416185622790487
+            rid: 2886416203928567907
         - key: 1
           value:
-            rid: 2886416185622790488
+            rid: 2886416203928567908
         - key: 2
           value:
-            rid: 2886416185622790489
-=======
             rid: 2886416185622790144
         - key: 1
           value:
@@ -33,7 +31,9 @@ MonoBehaviour:
         - key: 2
           value:
             rid: 2886416185622790146
->>>>>>> origin/ESteban2.0
+=======
+            rid: 2886416203928567909
+>>>>>>> origin/Esteban
       lastMaterialMappings:
         serializedData: []
       previewSettings:
@@ -41,16 +41,14 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2886416185622790487
+    - rid: 2886416203928567907
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 
-    - rid: 2886416185622790488
+    - rid: 2886416203928567908
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 
-    - rid: 2886416185622790489
-=======
     - rid: 2886416185622790144
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
@@ -60,7 +58,9 @@ MonoBehaviour:
       data:
         modelID: 
     - rid: 2886416185622790146
->>>>>>> origin/ESteban2.0
+=======
+    - rid: 2886416203928567909
+>>>>>>> origin/Esteban
       type: {class: ModelSelection, ns: Unity.AI.Pbr.Services.Stores.States, asm: Unity.AI.Pbr}
       data:
         modelID: 

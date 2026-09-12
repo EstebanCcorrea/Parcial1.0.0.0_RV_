@@ -2509,12 +2509,12 @@ MonoBehaviour:
   zoomSpeed: 2
   minZoom: 2
   maxZoom: 10
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 5149045271106545310}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  animator: {fileID: 0}
+    m_Bits: 8
+  animator: {fileID: 3971407523222435421}
 --- !u!1 &8423914098624427301
 GameObject:
   m_ObjectHideFlags: 0

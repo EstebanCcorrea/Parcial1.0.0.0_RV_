@@ -1719,10 +1719,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.43749037
-  m_Height: 2.2471035
+  m_Radius: 0.4374904
+  m_Height: 2.316947
   m_Direction: 1
-  m_Center: {x: 0.004974484, y: 0.6632412, z: 0.03691241}
+  m_Center: {x: -1.9541918e-10, y: 0.63926595, z: 0.06999999}
 --- !u!114 &8361896244889642647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1765,67 +1765,19 @@ MonoBehaviour:
     m_ActionId: 62a4a20e-bc32-45d7-9a82-99614af6380a
     m_ActionName: 'Soldado/Run[/Keyboard/leftShift]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: bd2f1685-2706-4874-a352-46b4a775bf77
     m_ActionName: 'Mago/Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/DualSenseGamepadHID/leftStick]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Jump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 2b7002d8-e2ad-42e9-b3c9-7620592183e0
     m_ActionName: 'Mago/Jump[/Keyboard/enter,/DualSenseGamepadHID/buttonSouth]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Crouch
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: a46bdc28-9650-4134-bfdf-2ba4ad0b6208
     m_ActionName: 'Mago/Crouch[/Keyboard/rightCtrl,/DualSenseGamepadHID/buttonEast]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Run
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: fb0c0b83-aa9a-4095-b2f0-7bc2c2e259c3
     m_ActionName: 'Mago/Run[/Keyboard/rightShift,/DualSenseGamepadHID/rightTrigger]'
   - m_PersistentCalls:
@@ -1833,19 +1785,7 @@ MonoBehaviour:
     m_ActionId: 9ec30dec-2311-420e-ba2a-943b2fbc66c3
     m_ActionName: 'Soldado/Look[/DualSenseGamepadHID/rightStick/left]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Look
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 46dc0f10-67b0-439d-82c0-c20b0faaa49d
     m_ActionName: 'Mago/Look[/Keyboard/i,/Keyboard/k,/Keyboard/j,/Keyboard/l]'
   - m_PersistentCalls:
@@ -1853,19 +1793,7 @@ MonoBehaviour:
     m_ActionId: fb4fac21-29c5-4154-b566-ab5c2d4c0d5c
     m_ActionName: 'Soldado/Zoom[/DualSenseGamepadHID/leftTrigger]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5929754113573581721}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Zoom
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: fa87e168-b974-4c48-be93-b391de55b217
     m_ActionName: 'Mago/Zoom[/Mouse/middleButton]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -1890,13 +1818,8 @@ MonoBehaviour:
   crouchSpeed: 2.5
   jumpForce: 5
   cameraTransform: {fileID: 0}
-  lookSensitivityMouse: 2
-  lookSensitivityGamepad: 100
-  zoomSpeed: 2
-  minZoom: 2
-  maxZoom: 10
   groundCheck: {fileID: 4556477780920382257}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -2268,7 +2191,7 @@ Transform:
   m_GameObject: {fileID: 8034174001841598234}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.133, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

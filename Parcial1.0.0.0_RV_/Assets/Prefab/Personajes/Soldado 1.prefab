@@ -1080,7 +1080,7 @@ Transform:
   m_GameObject: {fileID: 4396562219308164780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.307, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2312,9 +2312,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.31197932
-  m_Height: 2.102903
+  m_Height: 2.0396194
   m_Direction: 1
-  m_Center: {x: 0, y: 0.6858485, z: 0.07607511}
+  m_Center: {x: 0, y: 0.71654797, z: 0.07607511}
 --- !u!64 &8513941026130237432
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2363,67 +2363,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: bb477b6b-322e-41a2-9ed4-f1e61af905a7
     m_ActionName: 'Soldado/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Jump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 733ad024-2405-4d8d-88ce-9985ea9ad209
     m_ActionName: 'Soldado/Jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Crouch
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 8dffa440-703e-4e5c-a258-45c5288de334
     m_ActionName: 'Soldado/Crouch[/Keyboard/leftCtrl]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Run
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 62a4a20e-bc32-45d7-9a82-99614af6380a
     m_ActionName: 'Soldado/Run[/Keyboard/leftShift]'
   - m_PersistentCalls:
@@ -2504,17 +2456,12 @@ MonoBehaviour:
   crouchSpeed: 2.5
   jumpForce: 5
   cameraTransform: {fileID: 0}
-  lookSensitivityMouse: 2
-  lookSensitivityGamepad: 100
-  zoomSpeed: 2
-  minZoom: 2
-  maxZoom: 10
-  groundCheck: {fileID: 0}
-  groundCheckRadius: 0.2
+  groundCheck: {fileID: 5149045271106545310}
+  groundCheckRadius: 0.5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  animator: {fileID: 0}
+    m_Bits: 8
+  animator: {fileID: 3971407523222435421}
 --- !u!1 &8423914098624427301
 GameObject:
   m_ObjectHideFlags: 0

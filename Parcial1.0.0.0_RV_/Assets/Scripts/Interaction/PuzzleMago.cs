@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 using UnityEngine.UI;
 
@@ -20,8 +21,14 @@ public class PuzzleMago : MonoBehaviour
     [Header("Runas")]
     [SerializeField] private RunaInteractable[] runas;
 
+    [Header("Eventos")]
+    [Tooltip("Se dispara SOLO cuando la palabra se completa correctamente. Aquí se engancha PuzzleSoldado para habilitar las espadas.")]
+    public UnityEvent onPuzzleMagoCompletado;
+
     private string palabraJugador = "";
     private bool puzzleCompletado = false;
+
+    public bool PuzzleCompletado => puzzleCompletado;
 
     public void IniciarPuzzle()
     {
@@ -128,6 +135,9 @@ public class PuzzleMago : MonoBehaviour
 
             if (botonAccion != null)
                 botonAccion.gameObject.SetActive(true);
+
+            // Avisamos a quien esté escuchando (ej. PuzzleSoldado) que el mago terminó.
+            onPuzzleMagoCompletado?.Invoke();
         }
         else
         {
@@ -179,7 +189,7 @@ public class PuzzleMago : MonoBehaviour
         palabraJugador = "";
         puzzleCompletado = false;
 
-        // Reiniciar todas las runas
+        // Reiniciar todas las runas (esto también apaga su iluminación)
         if (runas != null)
         {
             foreach (RunaInteractable runa in runas)
@@ -191,11 +201,9 @@ public class PuzzleMago : MonoBehaviour
             }
         }
 
-      
         if (puzzlePanel != null)
             puzzlePanel.SetActive(false);
 
-     
         if (progressPanel != null)
             progressPanel.SetActive(false);
 

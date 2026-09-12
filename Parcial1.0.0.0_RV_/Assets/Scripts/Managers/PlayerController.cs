@@ -15,16 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 5f;
 
     [Header("Camera")]
+    [Tooltip("Transform de la cámara activa (asignado por CameraManager). Solo se usa para calcular la dirección de movimiento relativa a cámara; el posicionamiento de la cámara en sí lo maneja Cinemachine / SharedCameraController.")]
     [SerializeField] private Transform cameraTransform;
-    [SerializeField] private float lookSensitivityMouse = 2f;
-    [SerializeField] private float lookSensitivityGamepad = 100f;
-    [SerializeField] private float zoomSpeed = 2f;
-    [SerializeField] private float minZoom = 2f;
-    [SerializeField] private float maxZoom = 10f;
 
     [Header("Grounded")]
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private float groundCheckRadius = 0.5f;
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Animator")]
@@ -36,13 +32,8 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
 
     private Vector2 moveInput;
-    private Vector2 lookInput;
     private bool isRunning;
     private bool isCrouching;
-
-    private float yaw;
-    private float pitch = 20f;
-    private float distance = 5f;
 
     private float originalHeight;
     private Vector3 originalCenter;
@@ -52,8 +43,12 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true; // evita que el Rigidbody gire solo
         capsule = GetComponent<CapsuleCollider>();
         input = GetComponent<PlayerInput>();
+
+        // TEMP DEBUG: confirmar que Awake corre y qué mapa/acciones tiene este objeto
+        Debug.Log($"[{gameObject.name}] Awake ejecutado. Current Action Map: {input.currentActionMap?.name}");
 
         // Suscribir acciones
         input.actions["Move"].performed += OnMove;
@@ -62,8 +57,9 @@ public class PlayerController : MonoBehaviour
         input.actions["Run"].canceled += OnRun;
         input.actions["Crouch"].performed += OnCrouch;
         input.actions["Jump"].performed += OnJump;
-        input.actions["Look"].performed += OnLook;
-        input.actions["Zoom"].performed += OnZoom;
+
+        // TEMP DEBUG: confirmar que la suscripción a Jump se registró sin lanzar excepción
+        Debug.Log($"[{gameObject.name}] Suscripción a Jump completada.");
 
         if (capsule != null)
         {
@@ -91,28 +87,14 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        // TEMP DEBUG: quitar esta línea después de diagnosticar
+        Debug.Log($"OnJump llamado. context.performed={context.performed}, isGrounded={isGrounded}, phase={context.phase}");
+
+        if (context.performed && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             Debug.Log("Salto ejecutado");
         }
-    }
-
-
-    public void OnLook(InputAction.CallbackContext context)
-    {
-        lookInput = context.ReadValue<Vector2>();
-    }
-
-    public void OnZoom(InputAction.CallbackContext context)
-    {
-        float zoomInput = context.ReadValue<float>();
-
-
-        distance -= zoomInput * zoomSpeed * Time.deltaTime;
-
-        // Evita que la cámara se meta dentro del jugador o se aleje demasiado
-        distance = Mathf.Clamp(distance, minZoom, maxZoom);
     }
 
     // ================= MOVIMIENTO =================
@@ -122,8 +104,22 @@ public class PlayerController : MonoBehaviour
         if (isCrouching) currentSpeed = crouchSpeed;
         else if (isRunning) currentSpeed = runSpeed;
 
+        // Ground check: usar SOLO la capa de suelo, no "todas las capas" (~0),
+        // para evitar detectar el propio collider del jugador o el del otro jugador.
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // TEMP DEBUG: comparar contra un CheckSphere sin filtro de capa,
+        // y mostrar qué collider(es) hay cerca, para saber si es un problema
+        // de capa (Layer) o de posición/radio.
+        bool hitsAnything = Physics.CheckSphere(groundCheck.position, groundCheckRadius, ~0);
+        if (!isGrounded)
+        {
+            Collider[] nearby = Physics.OverlapSphere(groundCheck.position, groundCheckRadius, ~0);
+            string names = nearby.Length == 0 ? "ninguno" : string.Join(", ", System.Array.ConvertAll(nearby, c => $"{c.name}(layer:{LayerMask.LayerToName(c.gameObject.layer)})"));
+            Debug.Log($"[{gameObject.name}] GroundCheck pos={groundCheck.position}, radius={groundCheckRadius}, hitsAnything(sin filtro)={hitsAnything}, colliders cercanos: {names}");
+        }
+
+        // Dirección relativa a la cámara
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
         forward.y = 0f; right.y = 0f;
@@ -131,35 +127,38 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = forward * moveInput.y + right * moveInput.x;
 
+        // Velocidad horizontal
+        Vector3 horizontalVelocity = movement * currentSpeed;
+
+        // Mantener la velocidad vertical del Rigidbody (gravedad y salto)
+        Vector3 velocity = new Vector3(horizontalVelocity.x, rb.linearVelocity.y, horizontalVelocity.z);
+        rb.linearVelocity = velocity;
+
+        // Rotación del personaje solo si hay movimiento
         if (movement.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(movement);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.fixedDeltaTime);
         }
 
-        rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
-
         UpdateCrouchCollider();
 
-        animator.SetFloat("Speed", movement.magnitude * (currentSpeed / runSpeed));
-        animator.SetBool("IsCrouching", isCrouching);
-        animator.SetBool("IsGrounded", isGrounded);
-        animator.SetFloat("VerticalVelocity", rb.linearVelocity.y);
+        // Animator
+        if (animator != null)
+        {
+            animator.SetFloat("Speed", movement.magnitude * (currentSpeed / runSpeed));
+            animator.SetBool("IsCrouching", isCrouching);
+            animator.SetBool("IsGrounded", isGrounded);
+            animator.SetFloat("VerticalVelocity", rb.linearVelocity.y);
+        }
     }
 
-    private void LateUpdate()
-    {
-        // Rotación de cámara con mouse o gamepad
-        yaw += lookInput.x * lookSensitivityMouse;
-        pitch -= lookInput.y * lookSensitivityMouse;
-        pitch = Mathf.Clamp(pitch, -40f, 80f);
-
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
-        Vector3 offset = rotation * new Vector3(0, 0, -distance);
-
-        cameraTransform.position = transform.position + offset;
-        cameraTransform.LookAt(transform.position);
-    }
+    // NOTA: se eliminó el LateUpdate() que movía manualmente cameraTransform
+    // (yaw, pitch, distance). Ahora Cinemachine (PlayerCameraLook +
+    // CinemachineOrbitalFollow) y SharedCameraController son los únicos
+    // responsables de posicionar las cámaras. Tener dos sistemas escribiendo
+    // sobre el mismo Transform en el mismo frame era lo que causaba el
+    // comportamiento errático de cámara.
 
     private void UpdateCrouchCollider()
     {

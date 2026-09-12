@@ -620,15 +620,16 @@ MonoBehaviour:
     m_LastClickedID:
       m_rawData: 0
     m_ExpandedIDs:
+    - m_rawData: 568105589213754818
     - m_rawData: 0
-    - m_rawData: 568105584918812134
-    - m_rawData: 568105584918856192
-    - m_rawData: 568105584918866184
-    - m_rawData: 568105584918866186
-    - m_rawData: 568105584918866188
-    - m_rawData: 568105584918866190
-    - m_rawData: 568105584918866192
-    - m_rawData: 568105584918866194
+    - m_rawData: 568105584918854898
+    - m_rawData: 568105584918859814
+    - m_rawData: 568105584918859824
+    - m_rawData: 568105584918859834
+    - m_rawData: 568105584918899588
+    - m_rawData: 568105584918899916
+    - m_rawData: 568105584918899968
+    - m_rawData: 568105584918899992
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -661,15 +662,16 @@ MonoBehaviour:
     m_LastClickedID:
       m_rawData: 0
     m_ExpandedIDs:
+    - m_rawData: 568105589213754818
     - m_rawData: 0
-    - m_rawData: 568105584918812134
-    - m_rawData: 568105584918856192
-    - m_rawData: 568105584918866184
-    - m_rawData: 568105584918866186
-    - m_rawData: 568105584918866188
-    - m_rawData: 568105584918866190
-    - m_rawData: 568105584918866192
-    - m_rawData: 568105584918866194
+    - m_rawData: 568105584918854898
+    - m_rawData: 568105584918859814
+    - m_rawData: 568105584918859824
+    - m_rawData: 568105584918859834
+    - m_rawData: 568105584918899588
+    - m_rawData: 568105584918899916
+    - m_rawData: 568105584918899968
+    - m_rawData: 568105584918899992
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -829,7 +831,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_rawData: 568105589213409738
       m_LastClickedID:
         m_rawData: 0
       m_ExpandedIDs: []
@@ -1540,9 +1543,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 9.5610895, y: 8.078811, z: 18.85824}
+    m_Target: {x: 11.581608, y: 5.1175313, z: 13.080316}
     speed: 2
-    m_Value: {x: 11.581608, y: 5.1175313, z: 13.080316}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1589,13 +1592,13 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.0015741135, y: 0.98799425, z: -0.15418448, w: -0.010077101}
+    m_Target: {x: -0.003855617, y: 0.9939333, z: -0.10355183, w: -0.036990646}
     speed: 2
-    m_Value: {x: -0.003855617, y: 0.9939333, z: -0.10355183, w: -0.036990646}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 6.8008866
+    m_Target: 4.868951
     speed: 2
-    m_Value: 4.868951
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2

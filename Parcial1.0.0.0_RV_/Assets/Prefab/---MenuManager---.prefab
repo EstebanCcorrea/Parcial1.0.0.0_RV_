@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
---- !u!1 &2134351607200175808
-========
 --- !u!1 &6906193774407999262
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,13 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
-  - component: {fileID: 959665316338628392}
-  - component: {fileID: 2539298238383415738}
-========
   - component: {fileID: 696978758657343669}
   - component: {fileID: 2243653783225811311}
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
   m_Layer: 0
   m_Name: ---MenuManager---
   m_TagString: Untagged
@@ -26,66 +17,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
---- !u!4 &959665316338628392
-========
 --- !u!4 &696978758657343669
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
-  m_GameObject: {fileID: 2134351607200175808}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -0}
-========
   m_GameObject: {fileID: 6906193774407999262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 297.4051, y: 167.53728, z: -0.00001}
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
---- !u!114 &2539298238383415738
-========
 --- !u!114 &2243653783225811311
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
-  m_GameObject: {fileID: 2134351607200175808}
-========
   m_GameObject: {fileID: 6906193774407999262}
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e9b19143066d684cb5bc525ab8d007d, type: 3}
   m_Name: 
-<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara2.0/CameraManager.prefab
-  m_EditorClassIdentifier: Assembly-CSharp::CameraManager
-  player1: {fileID: 0}
-  player2: {fileID: 0}
-  sharedCamera: {fileID: 0}
-  player1Camera: {fileID: 0}
-  player2Camera: {fileID: 0}
-  player1Controller: {fileID: 0}
-  player2Controller: {fileID: 0}
-  splitDistance: 3
-  transitionSpeed: 2
-========
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuPrincipalPanel: {fileID: 0}
   menuPausaPanel: {fileID: 0}
   menuConfigPanel: {fileID: 0}
   menuInstrucPanel: {fileID: 0}
->>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/---MenuManager---.prefab

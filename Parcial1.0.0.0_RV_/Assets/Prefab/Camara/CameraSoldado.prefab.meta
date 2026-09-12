@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Parcial1.0.0.0_RV_/Assets/Prefab/Camara/CameraSoldado.prefab.meta
 guid: 6a1673c22c6f71747978b5a3f6044d13
+========
+guid: cab173c5140605e439db7ecd2e95855c
+>>>>>>>> origin/ana-definitivo:Parcial1.0.0.0_RV_/Assets/Prefab/Camara/CameraMago.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

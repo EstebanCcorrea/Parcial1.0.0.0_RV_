@@ -361,13 +361,13 @@ MonoBehaviour:
   Orbits:
     Top:
       Radius: 2
-      Height: 5
+      Height: 2.42
     Center:
-      Radius: 4
-      Height: 2.25
+      Radius: 2.92
+      Height: 1.2
     Bottom:
-      Radius: 2.5
-      Height: 0.1
+      Radius: 1.98
+      Height: 0.07
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -933,14 +933,14 @@ MonoBehaviour:
   Radius: 5
   Orbits:
     Top:
-      Radius: 2
-      Height: 5
+      Radius: 1.6
+      Height: 3.65
     Center:
-      Radius: 4
-      Height: 2.25
+      Radius: 3.53
+      Height: 1.62
     Bottom:
-      Radius: 2.5
-      Height: 0.1
+      Radius: 1.93
+      Height: 0.72
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -1391,11 +1391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2036436992312402732, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: m_Height
-      value: 1.793255
+      value: 2.0396194
       objectReference: {fileID: 0}
     - target: {fileID: 2036436992312402732, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: m_Center.y
-      value: 0.84067243
+      value: 0.71654797
       objectReference: {fileID: 0}
     - target: {fileID: 3373913161255894353, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
@@ -1463,7 +1463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149045271106545310, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.105
+      value: -0.307
       objectReference: {fileID: 0}
     - target: {fileID: 5624278209121874116, guid: 785cc8ba76d7a3348beee05742903aea, type: 3}
       propertyPath: animator
@@ -1576,19 +1576,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3252819461989042298, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_Height
-      value: 1.8763921
+      value: 2.316947
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252819461989042298, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
+      propertyPath: m_Radius
+      value: 0.4374904
       objectReference: {fileID: 0}
     - target: {fileID: 3252819461989042298, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_Center.x
-      value: 0.004974484
+      value: -1.9541918e-10
       objectReference: {fileID: 0}
     - target: {fileID: 3252819461989042298, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_Center.y
-      value: 0.8486002
+      value: 0.63926595
       objectReference: {fileID: 0}
     - target: {fileID: 3252819461989042298, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_Center.z
-      value: 0.03691241
+      value: 0.06999999
       objectReference: {fileID: 0}
     - target: {fileID: 4556477780920382257, guid: e59f16a05c4df3440b7ae50d602dcdc7, type: 3}
       propertyPath: m_LocalPosition.x

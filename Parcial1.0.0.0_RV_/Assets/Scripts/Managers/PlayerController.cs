@@ -56,14 +56,14 @@ public class PlayerController : MonoBehaviour
         input = GetComponent<PlayerInput>();
 
         // Suscribir acciones
-        input.actions["Move"].performed += Move;
-        input.actions["Move"].canceled += Move;
-        input.actions["Run"].performed += Run;
-        input.actions["Run"].canceled += Run;
-        input.actions["Crouch"].performed += Crouch;
-        input.actions["Jump"].performed += Jump;
-        input.actions["Look"].performed += Look;
-        input.actions["Zoom"].performed += Zoom;
+        input.actions["Move"].performed += OnMove;
+        input.actions["Move"].canceled += OnMove;
+        input.actions["Run"].performed += OnRun;
+        input.actions["Run"].canceled += OnRun;
+        input.actions["Crouch"].performed += OnCrouch;
+        input.actions["Jump"].performed += OnJump;
+        input.actions["Look"].performed += OnLook;
+        input.actions["Zoom"].performed += OnZoom;
 
         if (capsule != null)
         {
@@ -73,38 +73,42 @@ public class PlayerController : MonoBehaviour
     }
 
     // ================= INPUT =================
-    public void Move(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
 
-    public void Run(InputAction.CallbackContext context)
+    public void OnRun(InputAction.CallbackContext context)
     {
         isRunning = context.ReadValueAsButton();
     }
 
-    public void Crouch(InputAction.CallbackContext context)
+    public void OnCrouch(InputAction.CallbackContext context)
     {
         if (context.performed)
             isCrouching = !isCrouching;
     }
 
-    public void Jump(InputAction.CallbackContext context)
+    public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed && isGrounded)
+        if (context.performed)
+        {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            Debug.Log("Salto ejecutado");
+        }
     }
 
-    public void Look(InputAction.CallbackContext context)
+
+    public void OnLook(InputAction.CallbackContext context)
     {
         lookInput = context.ReadValue<Vector2>();
     }
 
-    public void Zoom(InputAction.CallbackContext context)
+    public void OnZoom(InputAction.CallbackContext context)
     {
         float zoomInput = context.ReadValue<float>();
 
-       
+
         distance -= zoomInput * zoomSpeed * Time.deltaTime;
 
         // Evita que la cámara se meta dentro del jugador o se aleje demasiado

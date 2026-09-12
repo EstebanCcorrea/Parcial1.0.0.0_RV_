@@ -4,9 +4,9 @@ public class HazardZone : MonoBehaviour
 {
     [Header("Configuración Elemental")]
     [Tooltip("El jugador asignado aquí PODRÁ cruzar de forma segura")]
-    [SerializeField] private string safePlayerName = "Mago"; // Para el charco azul pones Mago, para el rojo Soldado
+    [SerializeField] private string safePlayerName = "Mago"; // Para el charco azul Mago, para el rojo Soldado
 
-    [Header("Daño")]//si
+    [Header("Daño")]
     [SerializeField] private float damageAmount = 10f;
     [Tooltip("Tiempo en segundos entre cada aplicación de daño si se queda parado sobre el charco")]
     [SerializeField] private float damageInterval = 1f;
